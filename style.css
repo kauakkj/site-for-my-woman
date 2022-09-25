@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 97vw;
+}
+main{
+    min-width: 460px;
+    max-width: 100%;
+}
+header{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: #FFEEE6;
+    font-family: 'Amatic SC', cursive;
+    min-width: 460px;
+    max-width: 100%;
+}
+header h1{
+    font-size: 52px;
+    font-variant: small-caps;
+    filter: drop-shadow(0px 0px 10px black);
+}
+header img{
+    width: 64px;
+    animation: heart 1s ease-in-out infinite;
+    rotate: 24deg;
+}
+@keyframes heart {
+    0%{
+        transform: scale(100%);
+    }
+    50%{
+        transform: scale(110%);
+    }
+    100%{
+        transform: scale(100%);
+    }
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    margin: auto;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    margin-top: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    filter: drop-shadow(0px 0px 10px white);
+}
+#n-1:hover{
+    animation: a-hover .7s ease-in-out alternate ;
+}
+#n-2:hover{
+    animation: a-hover .7s ease-in-out alternate ;
+}
+#n-3:hover{
+    animation: a-hover .7s ease-in-out alternate ;
+}
+@keyframes a-hover {
+    0%{
+        transform: scale(100%);
+        filter: drop-shadow(0px 0px 0px pink);
+    }
+    50%{
+        transform: scale(110%);
+        filter: drop-shadow(0px 0px 10px pink);
+    }
+    100%{
+        transform: scale(100%);
+        filter: drop-shadow(0px 0px 0px pink);
+    }
+}
+nav a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+main{
+    width: 400px;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+    line-height: 40px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 24px;
+    background-color: #FFDACC;
+    padding:20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #FFDACC;
+}
+main h2{
+    color: #FCB1A7;
+}
+main p{
+    color: black;
+}
+body{
+    background-color: #FFEEE6;
+}
+main > p > a{
+    text-decoration: none;
+    filter: brightness(0%);
+    color: #FCB1A7;
+}
+main > p > a:hover{
+    text-decoration: underline;
+}
+
